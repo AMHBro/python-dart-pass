@@ -1,0 +1,66 @@
+Q1/
+L'erreur ne spécifie pas le type de données spécifié à l'aide (var)
+
+Q2/
+void main() {
+  var b = Cat();
+  var t = Dog();
+  var r = Cow();
+  t.printName();
+  t.printSound();
+  b.printName();
+  b.printSound();
+  r.printName();
+  r.printSound();
+}
+abstract class Animal {
+  void printName();
+  void printSound();
+}
+
+class Dog extends Animal {
+  void printName() {
+    print("Dog");
+  } 
+
+  void printSound() {
+    print("Bark");
+  }
+}
+
+class Cat extends Animal {
+  void printName() {
+    print("Cat");
+  }
+
+  void printSound() {
+    print("Meaw");
+  }
+}
+
+class Cow extends Animal {
+  void printName() {
+    print("Cow");
+  }
+
+  void printSound() {
+    print("Moo");
+  }
+}
+
+Q3/
+
+z= input("Enter  X value : ")
+list_x = []
+list_x2 = []
+for i in range(int(10)):
+    b=int(input(""))
+    if b % 2 == 0:
+        list_x.append(b)
+    else:
+        list_x2.append(b)
+
+    for i in range(len(list_x)):
+        print(f"{list_x[i]}   even")
+    for i in range(len(list_x2)):
+        print(f"{list_x2[i]}  odd")
